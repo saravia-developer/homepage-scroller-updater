@@ -1,0 +1,115 @@
+/* Contenedor general */
+.update-slider-form {
+    max-width: 900px;
+}
+
+/* Botón añadir */
+#add-slide {
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+#add-slide:hover {
+    background: #135e96;
+}
+
+/* Botón guardar */
+.update-slider-form input[type="submit"] {
+    background: #16a34a;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.update-slider-form input[type="submit"]:hover {
+    background: #15803d;
+}
+
+/* Card del slide */
+.update-slider-form #slides-container .slide-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.update-slider-form #slides-container .slide-item:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Título */
+.update-slider-form #slides-container .slide-item h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+/* Grid de campos */
+.update-slider-form .admin-form-group-slider {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+/* Labels */
+.update-slider-form .admin-form-group-slider label {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #475569;
+}
+
+/* Inputs y textarea */
+.update-slider-form .admin-form-group-slider :is(input, textarea) {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+    transition: 0.2s;
+    background: #f8fafc;
+}
+
+/* Focus bonito */
+.update-slider-form .admin-form-group-slider input:focus,
+.update-slider-form .admin-form-group-slider textarea:focus {
+    border-color: #2563eb;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.15);
+}
+
+/* Textarea tamaño */
+.update-slider-form .admin-form-group-slider textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Botón eliminar */
+.update-slider-form #slides-container .slide-item button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.update-slider-form #slides-container .slide-item button:hover {
+    background: #dc2626;
+}
