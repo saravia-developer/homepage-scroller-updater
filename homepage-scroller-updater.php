@@ -12,11 +12,13 @@ define('HSU_FILE_MAIN_PATH', plugin_dir_path(__FILE__));
 define('HSU_PUBLIC_PATH', HSU_FILE_MAIN_PATH . 'public/');
 define('HSU_ADMIN_PATH', HSU_FILE_MAIN_PATH . 'admin/');
 define('HSU_INCLUDES_PATH', HSU_FILE_MAIN_PATH . 'includes/');
+define('HSU_ASSETS_PATH', HSU_FILE_MAIN_PATH . 'assets/');
 
 define('HSU_FILE_MAIN_URI', plugin_dir_url(__FILE__));
 define('HSU_PUBLIC_URI', HSU_FILE_MAIN_URI . 'public/');
 define('HSU_ADMIN_URI', HSU_FILE_MAIN_URI . 'admin/');
 define('HSU_INCLUDES_URI', HSU_FILE_MAIN_URI . 'includes/');
+define('HSU_ASSETS_URI', HSU_FILE_MAIN_URI . 'assets/');
 
 if (!function_exists('is_plugin_active')) {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';

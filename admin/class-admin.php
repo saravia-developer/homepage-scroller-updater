@@ -18,6 +18,7 @@ class Admin {
         $this->loader = new Loader();
         $this->load_administration_menu_tabs();
         $this->load_new_shortcodes();
+        $this->load_admin_script();
         $this->load_admin_style();
     }
     
@@ -33,9 +34,16 @@ class Admin {
         add_shortcode('custom_slider', [$class_shortcodes, 'fn_custom_slider']);
     }
 
+    public function load_admin_script() {
+        $this->loader->add_action('admin_enqueue_scripts', $this, 'load_script');
+    }
 
     public function load_admin_style() {
         $this->loader->add_action('admin_enqueue_scripts', $this, 'load_style');
+    }
+
+    public function load_script() {
+        wp_enqueue_media();
     }
 
     public function load_style() {

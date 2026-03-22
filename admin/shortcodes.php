@@ -18,12 +18,12 @@ class Shortcodes
 
         ob_start();
         ?>
-        <div class="hsu-slider">
+        <div class="hsu-slider swiper">
 
-            <div class="hsu-slides">
+            <div class="hsu-slides swiper-wrapper">
                 <?php foreach ($slides as $index => $slide): ?>
 
-                    <div class="hsu-slide <?php echo $index === 0 ? 'active' : '' ?>">
+                    <div class="hsu-slide swiper-slide">
                         <div class="hsu-bg" style="background-image: url('<?php echo esc_url($slide['image']) ?>')"></div>
 
                         <div class="hsu-overlay"></div>
@@ -35,16 +35,14 @@ class Shortcodes
                                 <?php echo esc_html($slide['button']) ?>
                             </a>
                         </div>
+
                     </div>
 
                 <?php endforeach; ?>
             </div>
 
-            <div class="hsu-dots">
-                <?php foreach ($slides as $index => $slide): ?>
-                    <span class="dot <?php echo $index === 0 ? 'active' : '' ?>" data-index="<?php echo $index ?>"></span>
-                <?php endforeach; ?>
-            </div>
+			<div class="swiper-pagination"></div>
+            <div class="hsu-shape-divider"></div>
 
         </div>
         <?php
