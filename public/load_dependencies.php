@@ -10,16 +10,6 @@ class Load_Dependencies
     $base_path = HSU_PUBLIC_PATH . 'js/';
 
     $scripts = [
-      // 'hsu_slider' => [
-      //   'url' => $base_uri . 'slider.js',
-      //   'version' => file_exists($base_path . 'slider.js'),
-      //   'load_page' => ['test']
-      // ],
-      // 'hsu_screen_size' => [
-      //   'url' => $base_uri . 'screen-size.js',
-      //   'version' => file_exists($base_path . 'screen-size.js'),
-      //   'load_page' => ['test']
-      // ],
       'hsu_swiper_config' => [
         'url' => $base_uri . 'swiper-config.js',
         'version' => file_exists($base_path . 'swiper-config.js'),
@@ -36,10 +26,6 @@ class Load_Dependencies
       ) {
         continue;
       }
-
-      // 	  if( !is_front_page() ) {
-// 		  continue;
-// 	  }
 
       $uri = $script['url'] ?? '';
       $deps = $script['deps'] ?? [];
