@@ -54,11 +54,5 @@ class Load_Dependencies
   }
 
   public function load_libraries()
-  {
-    ?>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <?php
-  }
+  {}
 }

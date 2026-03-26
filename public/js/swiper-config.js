@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.hsu-slider.swiper', {
 
   direction: 'horizontal',
   loop: true,
