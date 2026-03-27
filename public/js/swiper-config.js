@@ -1,19 +1,30 @@
-const swiper = new Swiper('.hsu-slider.swiper', {
+// window.addEventListener('elementor/frontend/init', () => {
 
-  direction: 'horizontal',
-  loop: true,
+//   elementorFrontend.hooks.addAction(
+//     'frontend/element_ready/shortcode.default',
+//     (scope) => {
 
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
+      // 👇 scope viene como elemento DOM, no jQuery
+      const container = document.querySelector('.hsu-slider.swiper');
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+      if (!container) return;
 
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
+      new Swiper(container, {
+        loop: true,
+        pagination: {
+          el: container.querySelector('.swiper-pagination'),
+          clickable: true
+        },
+        navigation: {
+          nextEl: container.querySelector('.swiper-button-next'),
+          prevEl: container.querySelector('.swiper-button-prev'),
+        },
+        scrollbar: {
+          el: container.querySelector('.swiper-scrollbar'),
+        },
+      });
+
+//     }
+//   );
+
+// });

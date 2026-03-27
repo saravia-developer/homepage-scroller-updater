@@ -1,17 +1,11 @@
-/* .hsu-slider {
-  position: relative;
-  overflow: hidden;
-} */
-
-.swiper {
+.swiper.hsu-slider {
   --hsu-height: 701px;
   width: 100%;
   min-height: var(--hsu-height);
-  max-height: none;
 }
 
 @media(max-width: 480px) {
-	.swiper {
+	.swiper.hsu-slider {
 		--hsu-height: 741px;
 	}
 }

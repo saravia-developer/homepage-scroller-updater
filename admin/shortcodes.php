@@ -18,7 +18,7 @@ class Shortcodes
 
         ob_start();
         ?>
-        <div class="hsu-slider swiper">
+        <div id="hsu-slider" class="hsu-slider swiper">
 
             <div class="hsu-slides swiper-wrapper">
                 <?php foreach ($slides as $index => $slide): ?>

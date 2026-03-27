@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Homepage scroller updater
  * Description: Extensión para advance custom field.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Luis Saravia.
  */
 
