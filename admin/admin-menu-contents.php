@@ -63,6 +63,7 @@ class AdminMenuContents
 
     ?>
     <form method="POST" class="update-slider-form">
+      <h2>BANNER HOMEPAGE</h2>
       <div id="slides-container">
         <?php if (!empty($slides)): ?>
           <?php foreach ($slides as $index => $slide): ?>
@@ -85,12 +86,6 @@ class AdminMenuContents
                 <label>Título</label>
                 <input type="text" name="slides[<?= $index ?>][title]" value="<?= esc_attr($slide['title']) ?>"
                   id="title-input-<?= $index ?>">
-              </div>
-
-              <div class="admin-form-group-slider">
-                <label>Descripción</label>
-                <textarea name="slides[<?= $index ?>][description]"
-                  id="description-input-<?= $index ?>"><?= esc_textarea($slide['description']) ?></textarea>
               </div>
 
               <div class="admin-form-group-slider">
@@ -154,15 +149,6 @@ class AdminMenuContents
                   placeholder="Título"
                   id="admin-form-title-slider-${index}"
               >
-            </div>
-
-            <div class="admin-form-group-slider">
-              <label for="admin-form-description-slider-${index}">Descripción</label>
-              <textarea
-                  name="slides[${index}][description]"
-                  placeholder="Descripción"
-                  id="admin-form-description-slider-${index}"
-              ></textarea>
             </div>
             
             <div class="admin-form-group-slider">

@@ -14,7 +14,7 @@ class Load_Dependencies
         'url' => $base_uri . 'swiper-config.js',
         'deps' => ['jquery'],
         'version' => file_exists($base_path . 'swiper-config.js'),
-        'load_page' => ['home', 'home-test']
+        'load_page' => ['', 'home-test']
       ],
       'swiper_bundle_js' => [
         'url' => $base_uri . 'swiper-bundle.min.js',

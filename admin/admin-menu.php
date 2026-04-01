@@ -14,8 +14,8 @@ class Admin_Menu {
     
     public function add_menu_page() {
         add_menu_page(
-            'Homepage Scroller Updater',
-            'Homepage Scroller Updater',
+            'BANNER HOMEPAGE',
+            'BANNER HOMEPAGE',
             'manage_options',
             'homepage-scroller-updater',
             [$this->admin_menu_contents, 'homepage_scroller_updater_contents'],
